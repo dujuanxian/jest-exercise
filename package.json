@@ -3,9 +3,12 @@
     "test:jest": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "test": "npm run test:jest"
+    "test": "npm run test:jest",
+    "posttest": "npm run format",
+    "format": "prettier --write \"**/*.{js,css,md}\""
   },
   "devDependencies": {
-    "jest": "^24.8.0"
+    "jest": "^24.8.0",
+    "prettier": "^1.17.0"
   }
 }
