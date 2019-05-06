@@ -8,7 +8,20 @@
     "format": "prettier --write \"**/*.{js,css,md}\""
   },
   "devDependencies": {
+    "husky": "^2.2.0",
     "jest": "^24.8.0",
+    "lint-staged": "^8.1.6",
     "prettier": "^1.17.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
   }
 }
