@@ -7,7 +7,7 @@
     "test": "npm run test:jest",
     "posttest": "npm run format",
     "format": "prettier --write \"**/*.{js,css,md}\"",
-    "lint": "eslint . --cache --fix"
+    "lint": "eslint . --cache --fix -f table"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.4.4",
