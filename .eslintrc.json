@@ -1,8 +1,13 @@
 {
-  "extends": ["airbnb", "prettier"],
-  "plugins": ["prettier"],
+  "extends": ["airbnb", "prettier", "plugin:jest/recommended"],
+  "plugins": ["prettier", "jest"],
   "rules": {
-    "prettier/prettier": ["error", {"singleQuota": true}]
+    "prettier/prettier": ["error", {"singleQuota": true}],
+    "jest/no-disabled-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/valid-expect": "error",
+    "jest/expect-expect": "error",
+    "jest/valid-describe": "error"
   },
   "env": {
     "jest": true
