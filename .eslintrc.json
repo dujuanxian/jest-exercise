@@ -3,5 +3,8 @@
   "plugins": ["prettier"],
   "rules": {
     "prettier/prettier": ["error", {"singleQuota": true}]
+  },
+  "env": {
+    "jest": true
   }
 }
