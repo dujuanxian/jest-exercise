@@ -11,16 +11,20 @@ test('sum的结果为3', () => {
   const result = sum(1, 2);
   const value = 3;
 
-  // TODO: 给出正确的assertion，本行以上不能修改
-  expect(result).toBe(value);
+  // <--start
+  // TODO: 给出正确的assertion
+  expect(result);
+  // --end->
 });
 
 test('sum的结果不为3', () => {
   const result = sum(2, 2);
   const value = 3;
 
-  // TODO: 给出正确的assertion，本行以上不能修改
-  expect(result).toBe(value);
+  // <--start
+  // TODO: 给出正确的assertion
+  expect(result);
+  // --end->
 });
 
 test('person对象的值', () => {
@@ -29,6 +33,8 @@ test('person对象的值', () => {
     name: 'Tom'
   };
 
-  // TODO: 给出正确的assertion，本行以上不能修改
-  expect(result).toBe(value);
+  // <--start
+  // TODO: 给出正确的assertion
+  expect(result);
+  // --end->
 });
