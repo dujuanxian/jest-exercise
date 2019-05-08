@@ -9,17 +9,17 @@ describe('promises', () => {
   });
 });
 
-describe('async/await', () => {
-  // 使用ES6 async 和 await测试
-
+describe('async/await测试', () => {
   test('Promise解决后返回的结果为value的值', async () => {
-    // expect.assertions 来验证一定数量的断言被调用, 否则一个fulfilled态的Promise不会让测试失败
-    expect.assertions(1);
+    expect.assertions(1); //验证一定数量的断言被调用, 否则一个fulfilled态的Promise不会让测试失败
 
     const fetchDataPromise = fetchData('data');
     const value = 'async data';
 
-    // TODO: 测试fetchDataPromise解决后返回的结果为value的值，给出正确的assertion，本行以上不能修改
+    // <--start
+    // TODO: 测试fetchDataPromise解决后返回的结果为value的值，给出正确的assertion
+
+    // --end->
   });
 
   test('Promise被拒绝并返回错误信息', async () => {
@@ -27,6 +27,9 @@ describe('async/await', () => {
     const fetchDataPromise = fetchDataWithError();
     const value = 'error';
 
-    // TODO: 测试fetchDataPromise抛出的错误信息为value的值，给出正确的assertion，本行以上不能修改
+    // <--start
+    // TODO: 测试fetchDataPromise抛出的错误信息为value的值，给出正确的assertion
+
+    // --end->
   });
 });

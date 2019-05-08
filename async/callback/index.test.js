@@ -10,8 +10,11 @@ test('demo - 异步调用回调函数返回的结果为value', done => {
 
 test('异步调用失败回调函数返回的结果', done => {
   function failedCallback(error) {
+    // <--start
     // TODO: 测试error的值，给出正确的assertion
+
     expect(error);
+    // --end->
     done();
   }
   fetchDataWithError(() => {}, failedCallback);
